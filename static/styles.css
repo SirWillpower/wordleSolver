@@ -1,0 +1,92 @@
+/* CSS styles for Wordle Solver */
+
+
+.resizedTextbox {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.largeBox {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(227, 227, 225, 0.3);
+}
+
+h1 {
+    font-family: "lft-etica-sheriff", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+label {
+    font-family: "lft-etica-sheriff", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+
+/* Form override for letters inputs */
+.rightBox:focus {
+    border-color: rgba(127, 168, 104, 0.9);
+    box-shadow: 0 0 1px 3px rgba(127, 168, 104, 0.5);
+    outline: 0 none;
+}
+
+.placeBox:focus {
+    border-color: rgba(202, 180, 88, 0.9);
+    box-shadow: 0 0 1px 3px rgba(202, 180, 88, 0.5);
+    outline: 0 none;
+}
+
+.wrongBox:focus {
+    border-color: rgba(120, 124, 126, 0.9);
+    box-shadow: 0 0 1px 3px rgba(120, 124, 126, 0.5);
+    outline: 0 none;
+}
+
+/* Center the division in the page */
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh; /* Use min-height to ensure content is centered even on small screens */
+}
+
+/* Removes the bullet for each list item */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Shows list items in vertical boxes */
+li {
+    vertical-align: top;
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    --tw-border-opacity: 1;
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    background-color: #e3e3e3;
+    background-color: rgba(227,227,227,var(--tw-bg-opacity));
+    border-bottom-left-radius: 0.5rem;
+    border-color: #b8b8b8;
+    border-color: rgba(184,184,184,var(--tw-border-opacity));
+    border-top-right-radius: 0.5rem;
+    border-width: 1px;
+    color: #353d50;
+    color: rgba(53,61,80,var(--tw-text-opacity));
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 2rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
