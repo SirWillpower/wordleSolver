@@ -7,7 +7,7 @@ from flask import Flask, render_template, jsonify
 
 
 # Configure application
-app = Flask(__name__)
+app = Flask(__name__, template_folder=".")
 
 # Link list of possible answers
 WORD_LIST = "words_list.txt"
